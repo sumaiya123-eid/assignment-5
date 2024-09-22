@@ -8,10 +8,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body > 
+  <header class="sticky top-0 bg-white">
+  <div class="md:hidden flex justify-center pt-2 items-center gap-3 bg-[#F9F7F3]">
+    <img src="./assets/logo.png" alt="" srcset="">
+    <h3 class="md:hidden text-base text-[#111111] font-bold">Donate Bangladesh</h3>
+</div>
     <nav class="flex justify-between md:justify-around p-5 bg-[#F9F7F3]">
-        <button id="home" class="hidden md:inline rounded-lg px-7 bg-[#B4F461] text-base text-[#111111] font-bold">Home</button>
-        <div class="flex items-center gap-3">
+        <button id="home" class=" rounded-lg px-7 bg-[#B4F461] text-base text-[#111111] font-bold">Home</button>
+        <div class="hidden md:inline flex items-center gap-3">
             <img src="./assets/logo.png" alt="" srcset="">
             <h3 class="text-base text-[#111111] font-bold">Donate Bangladesh</h3>
         </div>
@@ -21,6 +26,7 @@
         </div>
 
     </nav>
+  </header>
 
     <h1 class="text-3xl font-bold mt-4 mx-8">Important FAQ</h1>
     <div class="join join-vertical w-full p-8">
