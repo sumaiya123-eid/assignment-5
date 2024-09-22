@@ -86,4 +86,9 @@ document.getElementById('history-btn').addEventListener('click',function(){
     document.getElementById('donate-div').classList.add('hidden');
     document.getElementById('history-btn').className = " bg-[#B4F461] p-3 rounded-lg text-base text-[#111111] font-bold";
     document.getElementById('btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
+    document.getElementById('btn').classList.add('p-3', 'rounded-lg', 'border', 'border-1');
+})
+
+document.getElementById('blog').addEventListener('click',function(){
+    window.location.href = "blog.html"
 })
