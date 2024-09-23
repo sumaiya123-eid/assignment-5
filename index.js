@@ -109,6 +109,7 @@ document.getElementById('btn').addEventListener('click',function(){
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
     document.getElementById('donate-div').classList.remove('hidden');
     document.getElementById('history-btn').classList.add('p-2', 'rounded-lg', 'border', 'border-4','border-lime-400');
+    document.getElementById('foot').classList.remove('hidden')
 
 })
 
@@ -120,6 +121,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
     document.getElementById('history-btn').classList.remove('border-4','border-lime-400');
     document.getElementById('btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
     document.getElementById('btn').classList.add('p-2', 'rounded-lg', 'border', 'border-4','border-lime-400');
+    document.getElementById('foot').classList.add('hidden')
 })
 
 // blog-btn event
