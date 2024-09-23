@@ -6,18 +6,17 @@ document.getElementById('donate-btn').addEventListener('click',function(){
         alert("Please enter currect amount !!!");
         return;
     }
-    const totalAmount = amount + inputValue1 ;
-    document.getElementById('amount1').innerText = totalAmount ;
-    const balance = getInnerTextValue('balance');
-    const remainingBalance = balance - inputValue1;
-    document.getElementById('balance').innerText = remainingBalance ;
-
-   
-
-    const heading1 = document.getElementById('head-1').innerText;
-    const div = document.createElement('div');
-    div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
-    div.innerHTML = ` 
+        document.getElementById('modal').showModal();
+    
+        const totalAmount = amount + inputValue1 ;
+        document.getElementById('amount1').innerText = totalAmount ;
+        const balance = getInnerTextValue('balance');
+        const remainingBalance = balance - inputValue1;
+        document.getElementById('balance').innerText = remainingBalance ;
+        const heading1 = document.getElementById('head-1').innerText;
+        const div = document.createElement('div');
+        div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
+        div.innerHTML = ` 
                      <p>${inputValue1} Taka is ${heading1}</P>
                       <p>Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
@@ -78,6 +77,7 @@ document.getElementById('btn').addEventListener('click',function(){
     document.getElementById('btn').classList.add('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
     document.getElementById('donate-div').classList.remove('hidden');
+    document.getElementById('history-btn').classList.add('p-3', 'rounded-lg', 'border', 'border-1');
 
 })
 
