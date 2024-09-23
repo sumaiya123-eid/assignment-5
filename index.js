@@ -27,7 +27,7 @@ document.getElementById('donate-btn').addEventListener('click',function(){
         div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
         div.innerHTML = ` 
                      <p class="font-bold">${inputValue1} Taka is ${heading1}</P>
-                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
+                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleString('en-US',{weekday: 'short'})} ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
     
@@ -61,7 +61,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
     div.innerHTML = ` 
                      <p class="font-bold">${inputValue2} Taka is ${heading2}</P>
-                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
+                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleString('en-US',{weekday: 'short'})} ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
 })
@@ -93,7 +93,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
     div.innerHTML = ` 
                      <p class="font-bold">${inputValue3} Taka is ${heading3}</P>
-                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
+                      <p><span class="font-bold">Date:</span> ${new Date().toLocaleString('en-US',{weekday: 'short'})} ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
 })
