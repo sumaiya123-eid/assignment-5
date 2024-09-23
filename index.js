@@ -6,6 +6,7 @@ document.getElementById('donate-btn').addEventListener('click',function(){
     const amount = getInnerTextValue('amount1');
     if(inputValue1 < 0 || isNaN(inputValue1)){
         alert("Please enter currect amount !!!");
+        document.getElementById('input-field1').value = '';
         return;
     }
         document.getElementById('modal').showModal();
@@ -39,6 +40,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     const amount2 = getInnerTextValue('amount2');
     if(inputValue2 < 0 || isNaN(inputValue2)){
         alert("Please enter currect amount !!!");
+        document.getElementById('input-field2').value = '';
         return;
     }
     document.getElementById('modal2').showModal();
@@ -72,6 +74,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     const amount3 = getInnerTextValue('amount3');
     if(inputValue3 < 0 || isNaN(inputValue3)){
         alert("Please enter currect amount !!!");
+        document.getElementById('input-field3').value = '';
         return;
     }
     document.getElementById('modal3').showModal();
@@ -102,9 +105,10 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
 document.getElementById('btn').addEventListener('click',function(){
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById('btn').classList.add('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
+    document.getElementById('btn').classList.remove('border-4','border-lime-400');
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
     document.getElementById('donate-div').classList.remove('hidden');
-    document.getElementById('history-btn').classList.add('p-3', 'rounded-lg', 'border', 'border-1');
+    document.getElementById('history-btn').classList.add('p-2', 'rounded-lg', 'border', 'border-4','border-lime-400');
 
 })
 
@@ -113,8 +117,9 @@ document.getElementById('history-btn').addEventListener('click',function(){
     document.getElementById('history-section').classList.remove('hidden');
     document.getElementById('donate-div').classList.add('hidden');
     document.getElementById('history-btn').className = " bg-[#B4F461] p-3 rounded-lg text-base text-[#111111] font-bold";
+    document.getElementById('history-btn').classList.remove('border-4','border-lime-400');
     document.getElementById('btn').classList.remove('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
-    document.getElementById('btn').classList.add('p-3', 'rounded-lg', 'border', 'border-1');
+    document.getElementById('btn').classList.add('p-2', 'rounded-lg', 'border', 'border-4','border-lime-400');
 })
 
 // blog-btn event
