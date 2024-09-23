@@ -1,6 +1,7 @@
 document.getElementById('donate-btn').addEventListener('click',function(){
     
     const inputValue1 = getValue('input-field1');
+
     const amount = getInnerTextValue('amount1');
     if(inputValue1 < 0 || isNaN(inputValue1)){
         alert("Please enter currect amount !!!");
@@ -10,6 +11,7 @@ document.getElementById('donate-btn').addEventListener('click',function(){
     
         const totalAmount = amount + inputValue1 ;
         document.getElementById('amount1').innerText = totalAmount ;
+        document.getElementById('input-field1').value = '';
         const balance = getInnerTextValue('balance');
         const remainingBalance = balance - inputValue1;
         document.getElementById('balance').innerText = remainingBalance ;
@@ -17,14 +19,12 @@ document.getElementById('donate-btn').addEventListener('click',function(){
         const div = document.createElement('div');
         div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
         div.innerHTML = ` 
-                     <p>${inputValue1} Taka is ${heading1}</P>
+                     <p class="font-bold">${inputValue1} Taka is ${heading1}</P>
                       <p>Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
     
 })
-
-
 
 document.getElementById('donate-btn2').addEventListener('click',function(){
     const inputValue2 = getValue('input-field2');
@@ -33,8 +33,10 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
         alert("Please enter currect amount !!!");
         return;
     }
+    document.getElementById('modal2').showModal();
     const totalAmount2 = amount2 + inputValue2 ;
     document.getElementById('amount2').innerText = totalAmount2 ;
+    document.getElementById('input-field2').value = '';
     const balance = getInnerTextValue('balance');
     const remainingBalance2 = balance - inputValue2;
     document.getElementById('balance').innerText = remainingBalance2 ;
@@ -43,7 +45,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     const div = document.createElement('div');
     div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
     div.innerHTML = ` 
-                     <p>${inputValue2} Taka is ${heading2}</P>
+                     <p class="font-bold">${inputValue2} Taka is ${heading2}</P>
                       <p>Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
@@ -56,8 +58,10 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
         alert("Please enter currect amount !!!");
         return;
     }
+    document.getElementById('modal3').showModal();
     const totalAmount3 = amount3 + inputValue3 ;
     document.getElementById('amount3').innerText = totalAmount3 ;
+    document.getElementById('input-field3').value = '';
     const balance = getInnerTextValue('balance');
     const remainingBalance3 = balance - inputValue3 ;
     document.getElementById('balance').innerText = remainingBalance3 ;
@@ -66,7 +70,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     const div = document.createElement('div');
     div.className = "border border-2 rounded-lg p-6 max-w-6xl mx-auto my-2";
     div.innerHTML = ` 
-                     <p>${inputValue3} Taka is ${heading3}</P>
+                     <p class="font-bold">${inputValue3} Taka is ${heading3}</P>
                       <p>Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}</p> `;
     
     document.getElementById('history-section').appendChild(div);
