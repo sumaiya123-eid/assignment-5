@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- tailwind and daisyUI connection -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+     
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+   <style>
+    .body{
+        font-family: "Lexend", sans-serif;
+    }
+   </style>
 
 </head>
-<body>
+<body class="body">
     <header class="mx-auto sticky top-0 bg-transparent backdrop-blur-lg z-10">
 
         <div class="md:hidden flex justify-center pt-2 items-center gap-3 bg-[#F9F7F3]">
@@ -34,8 +46,12 @@
             <button id="history-btn" class="p-3 rounded-lg border border-1">History</button>
         </div>
     </header>
+
+    
     <main>
         <div id="donate-div">
+
+            <!-- card-1 -->
         <div class="flex flex-col md:flex md:flex-row gap-8 items-center max-w-6xl mx-auto border border-1 rounded-xl p-6">
             <div>
                 <img src="./assets/noakhali.png" alt="" srcset="">
@@ -69,8 +85,8 @@
             
             </div>
         </div>
-
-
+             
+            <!-- card-2 -->
         <div class="flex flex-col md:flex md:flex-row gap-8 items-center max-w-6xl mx-auto border border-1 rounded-xl p-6 my-6">
             <div>
                 <img src="./assets/feni.png" alt="" srcset="">
@@ -102,7 +118,8 @@
             </dialog>
             </div>
         </div>
-
+            
+            <!-- card-3 -->
         <div class="flex flex-col md:flex md:flex-row gap-8 items-center max-w-6xl mx-auto border border-1 rounded-xl p-6">
             <div>
                 <img src="./assets/quota-protest.png" alt="" srcset="">

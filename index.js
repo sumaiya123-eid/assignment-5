@@ -1,3 +1,4 @@
+// card-1 btn event
 document.getElementById('donate-btn').addEventListener('click',function(){
     
     const inputValue1 = getValue('input-field1');
@@ -32,6 +33,7 @@ document.getElementById('donate-btn').addEventListener('click',function(){
     
 })
 
+// card-2 btn event
 document.getElementById('donate-btn2').addEventListener('click',function(){
     const inputValue2 = getValue('input-field2');
     const amount2 = getInnerTextValue('amount2');
@@ -64,6 +66,7 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
     document.getElementById('history-section').appendChild(div);
 })
 
+// card-3 btn event
 document.getElementById('donate-btn3').addEventListener('click',function(){
     const inputValue3 = getValue('input-field3');
     const amount3 = getInnerTextValue('amount3');
@@ -95,6 +98,7 @@ document.getElementById('donate-btn3').addEventListener('click',function(){
     document.getElementById('history-section').appendChild(div);
 })
 
+// donate-btn event
 document.getElementById('btn').addEventListener('click',function(){
     document.getElementById('history-section').classList.add('hidden');
     document.getElementById('btn').classList.add('bg-[#B4F461]', 'p-3','rounded-lg', 'text-base', 'text-[#111111]', 'font-bold');
@@ -104,6 +108,7 @@ document.getElementById('btn').addEventListener('click',function(){
 
 })
 
+// history-btn event
 document.getElementById('history-btn').addEventListener('click',function(){
     document.getElementById('history-section').classList.remove('hidden');
     document.getElementById('donate-div').classList.add('hidden');
@@ -112,6 +117,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
     document.getElementById('btn').classList.add('p-3', 'rounded-lg', 'border', 'border-1');
 })
 
+// blog-btn event
 document.getElementById('blog').addEventListener('click',function(){
     window.location.href = "blog.html"
 })
